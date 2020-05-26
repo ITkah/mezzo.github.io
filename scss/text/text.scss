@@ -1,0 +1,41 @@
+.title-xl {
+    color: #42283C;
+    font: 3.75rem "prata";
+    padding-bottom: 15px;
+    position: relative;
+    margin-bottom: 60px;
+    @media (max-width: 1600px) {
+        font-size: 3rem;
+    }
+    @media (max-width: 1280px) {
+        font-size: 2.75rem;
+        margin-bottom: 40px;
+    }
+    @media (max-width: 990px) {
+        font-size: 2.25rem;
+        line-height: 34px;
+    }
+    br {
+        display: none;
+        @media (max-width: 990px) {
+            display: block;
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100px;
+        height: 2px;
+        background: #42283C;
+    }
+}
+
+.text-simple {
+    color: #42283c;
+    font: 500 1rem 'Montserrat', sans-serif;
+    @media (max-width: 576px) {
+        font-size: .87rem;
+    }
+}

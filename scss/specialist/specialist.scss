@@ -1,0 +1,78 @@
+.specialist-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    margin: 0 10px;
+    &:hover {
+        img {
+            transform: scale(1.03);
+        }
+    }
+    img {
+        border-radius: 10px;
+        margin-bottom: 15px;
+        height: auto;
+        transition: .3s;
+        max-width: 100%;
+    }
+    .name {
+        color: #42283c;
+        font: 700 1.125rem 'Montserrat', sans-serif;
+        margin-bottom: 15px;
+    }
+    .prof {
+        color: #aaaaaa;
+        font: 500 .87rem 'Montserrat', sans-serif;
+    }
+}
+
+.specialist-container {
+    max-width: 90%;
+    margin: 0 auto;
+    @media (max-width: 990px) {
+        max-width: 100%;
+    }
+}
+
+.specialist {
+    .slick-prev.slick-disabled:before, .slick-next.slick-disabled:before {
+        opacity: 1;
+    }
+    .slick-next {
+        z-index: 99;
+        opacity: 1;
+        right: -60px;
+        @media (max-width: 1280px) {
+            right: -40px;
+        }
+    }
+    .slick-prev {
+        left: -80px;
+        z-index: 99;
+        opacity: 1;
+        @media (max-width: 1280px) {
+            left: -60px;
+        }
+    }
+    .slick-prev:before {
+        content: url(../img/icon/left.png);
+    }
+    .slick-next:before {
+        content: url(../img/icon/right.png);
+    }   
+}
+
+.slick-dots {
+    bottom: -35px;
+    @media (max-width: 990px) {
+        bottom: -40px;
+    }
+}
+.slick-dots li button:before {
+    font-size: 30px;
+}
+.slick-dots li.slick-active button:before {
+    opacity: 1;
+    color: #58008c;
+}

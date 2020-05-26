@@ -1,0 +1,10 @@
+.part-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    img {
+        max-width: 100%;
+        object-fit: contain;
+        height: 80px;
+    }
+}
