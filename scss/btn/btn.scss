@@ -1,0 +1,86 @@
+.btn-consult {
+    display: inline-block;
+    position: relative;
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    background: rgba(251, 251, 251, 0.3);
+    transition: .3s;
+    cursor: pointer;
+    &:hover {
+        color: #58008C;
+        border: 1px solid transparent;
+        &::after {
+            width: 100%;
+            left: 0;
+            box-sizing: border-box;
+        }
+        &::before {
+            width: 100%;
+            right: 0;
+            box-sizing: border-box;
+        }
+        span {
+            &::after {
+                height: 100%;
+                right: 0;
+                box-sizing: border-box;
+            }
+            &::before {
+                height: 100%;
+                left: 0;
+                box-sizing: border-box;
+            }
+        }
+    }
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -1px;
+        left: 12px;
+        width: 42px;
+        height: 1px;
+        background: #58008C;
+        transition: all 0.3s;
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: -1px;
+        right: 12px;
+        width: 60px;
+        height: 1px;
+        background: #58008C;
+        transition: all 0.3s;
+    }
+    span {
+        font: 500 .95rem 'Montserrat', sans-serif;
+        position: relative;
+        transition: .3s;
+        color: #fff;
+        display: block;
+        text-transform: uppercase;
+        padding: 15px 45px;
+        @media (max-width: 576px) {
+            font-size: 1.125rem;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -1px;
+            width: 1px;
+            height: 0;
+            background: #58008C;
+            transition: all 0.3s;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: -1px;
+            width: 1px;
+            height: 0;
+            background: #58008C;
+            transition: all 0.3s;
+        }
+    }
+}
