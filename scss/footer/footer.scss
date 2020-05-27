@@ -47,9 +47,21 @@ footer {
         @media (max-width: 576px) {
             width: 100%;
             padding: 10px 30px;
-            display: block;
             text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
             box-sizing: border-box;
+            padding: 0;
+        }
+        span {
+            @media (max-width: 576px) {
+                display: flex;
+                align-items: center;
+                width: 100%;
+                justify-content: center;
+                padding: 20px 0;
+            }
         }
     }
     img {
