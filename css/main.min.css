@@ -8,3 +8,14 @@
  
   .header-container .btn-consult {
     border: 1px solid #fff;}
+
+     @media (max-width: 576px) {
+.footer-logo-box .btn-consult {
+    width: 100%;
+    border: 1px solid #fff;
+    padding: 10px 30px;
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+}
+}
