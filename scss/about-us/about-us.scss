@@ -74,10 +74,13 @@
 .about-bg-2 {
     background: url(../img/about-us/about-us-2.png) no-repeat center center;
     background-size: cover;
-    height: 940px;
+    height: 900px;
     cursor: pointer;
-    padding: 100px 80px;
+    padding: 15% 20% 30% 15%;
     position: relative;
+    @media (max-width: 1600px) {
+        height: 750px;
+    }
     @media (max-width: 1400px) {
         height: 600px;
     }
@@ -172,9 +175,9 @@
         }
     }
     .about-title {
-        font: 700 1.5rem 'Montserrat', sans-serif;
+        font: 600 1.5rem 'Montserrat', sans-serif;
         color: #fff;
-        margin-bottom: 65px;
+        margin-bottom: 60px;
         transition: .2s;
         z-index: 9;
         position: relative;

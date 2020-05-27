@@ -76,6 +76,10 @@
         max-width: 600px;
         position: relative;
         z-index: 999;
+        left: 80px;
+        @media (max-width: 990px) {
+            left: 0;
+        }
     }
 }
 

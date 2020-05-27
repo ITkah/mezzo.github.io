@@ -1,3 +1,13 @@
+.services {
+    margin-bottom: 70px;
+    @media (max-width: 1400px) {
+        margin-bottom: 60px;
+    }
+    @media (max-width: 990px) {
+        margin-bottom: 70px;
+    }
+}
+
 .services-container {
     display: grid;
     grid-template-columns: repeat(5,1fr);
@@ -19,7 +29,7 @@
 }
 
 .services-box {
-    height: 340px;
+    height: 350px;
 }
 
 .serv-1 {
