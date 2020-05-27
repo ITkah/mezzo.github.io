@@ -352,10 +352,43 @@ nav {
       .fixed-elements .cont .social-list i {
         color: #fff; }
 
+.main-slider .container {
+  position: relative; }
+
+.preloader {
+  background: rgba(255, 255, 255, 0.95);
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 999;
+  -webkit-transition: .3s;
+  -o-transition: .3s;
+  transition: .3s;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.loaded_hiding .preloader {
+  z-index: -999;
+  opacity: 0; }
+
 .main-slider-box {
   background: url(../img/slide/slide.png) no-repeat center center fixed;
   background-size: cover;
-  height: 100vh;
+  height: 91vh;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

@@ -24,6 +24,7 @@ $(document).ready(function() {
         slidesToScroll: 1,
         fade: true,
         cssEase: 'linear', 
+        lazyLoad: 'ondemand',
         responsive: [
             {
               breakpoint: 990,

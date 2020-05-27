@@ -1,7 +1,37 @@
+
+.main-slider {
+    .container {
+        position: relative;
+    }
+}
+
+.preloader {
+    background: rgba(255,255,255,.95);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 999;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.loaded_hiding {  
+    .preloader {
+        z-index: -999;
+        opacity: 0;
+    }
+}
+
 .main-slider-box {
     background: url(../img/slide/slide.png) no-repeat center center fixed;
     background-size: cover;
-    height: 100vh;
+    height: 91vh;
     display: flex;
     align-items: flex-start;
     justify-content: center;
