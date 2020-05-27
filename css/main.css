@@ -379,7 +379,8 @@ nav {
   -webkit-box-pack: center;
   -webkit-justify-content: center;
       -ms-flex-pack: center;
-          justify-content: center; }
+          justify-content: center;
+  transition: .3s; }
   .preloader img {
     height: 30px;
     width: 30px; }
