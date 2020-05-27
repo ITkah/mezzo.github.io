@@ -70,6 +70,7 @@ header {
       .header-container .social-icon {
         display: none; } }
   .header-container .btn-consult {
+    border: 1px solid #fff;
     margin-left: 35px; }
     @media (max-width: 990px) {
       .header-container .btn-consult {
