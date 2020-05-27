@@ -6,7 +6,7 @@
 }
 
 .preloader {
-    background: rgba(255,255,255,.95);
+    background: rgba(0,0,0,.85);
     height: 100%;
     width: 100%;
     position: absolute;
@@ -14,11 +14,15 @@
     right: 0;
     top: 0;
     bottom: 0;
-    z-index: 999;
+    z-index: 99;
     transition: .3s;
     display: flex;
     align-items: center;
     justify-content: center;
+    img {
+        height: 30px;
+        width: 30px;
+    }
 }
 
 .loaded_hiding {  
@@ -70,7 +74,7 @@
     .main-slider-info {
         max-width: 600px;
         position: relative;
-        z-index: 9;
+        z-index: 999;
     }
 }
 

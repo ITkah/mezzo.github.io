@@ -356,7 +356,7 @@ nav {
   position: relative; }
 
 .preloader {
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(0, 0, 0, 0.85);
   height: 100%;
   width: 100%;
   position: absolute;
@@ -364,7 +364,7 @@ nav {
   right: 0;
   top: 0;
   bottom: 0;
-  z-index: 999;
+  z-index: 99;
   -webkit-transition: .3s;
   -o-transition: .3s;
   transition: .3s;
@@ -380,6 +380,9 @@ nav {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
+  .preloader img {
+    height: 30px;
+    width: 30px; }
 
 .loaded_hiding .preloader {
   z-index: -999;
@@ -435,7 +438,7 @@ nav {
   .main-slider-box .main-slider-info {
     max-width: 600px;
     position: relative;
-    z-index: 9; }
+    z-index: 999; }
 
 .main-slider-nav {
   display: -webkit-box;

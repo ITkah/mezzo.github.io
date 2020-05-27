@@ -22,7 +22,7 @@
                 <div class="header-container">
                     <div class="call-menu">
                         <div class="call-menu-box">
-                            <img loading="lazy" src="img/icon/menu.svg" class="call-menu-icon" alt="menu">
+                            <img src="img/icon/menu.svg" class="call-menu-icon" alt="menu">
                         </div>
                         <a href="mailto:mezzoclinic.clients@gmail.com" class="mail-header">
                             <i class="far fa-envelope"></i>
@@ -30,7 +30,7 @@
                         </a>
                     </div>
                     <div class="header-logo">
-                        <img loading="lazy" src="img/icon/logo.png" alt="logo">
+                        <img  src="img/icon/logo.png" alt="logo">
                     </div>
                     <div class="header-info-box">
                         <a href="tell:+380675172653" class="phone-header">
@@ -55,7 +55,7 @@
                 </div>
                 <nav>
                     <div class="close-menu">
-                        <img loading="lazy" src="img/icon/close.svg" alt="close">
+                        <img  src="img/icon/close.svg" alt="close">
                         <p>Закрыть</p>
                     </div>
                     <ul>
@@ -140,12 +140,12 @@
             </div>
             <section class="main-slider margin">
                 <div class="container">
-                    <div class="preloader">
-                        <img src="img/preloader.svg" alt="preloader">
-                    </div>
                     <div class="main-slider-container">
                         <div>
                             <div class="main-slider-box">
+                                <div class="preloader">
+                                    <img src="img/preloader.svg" alt="preloader">
+                                </div>
                                 <div class="main-slider-info padding wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.75s">
                                     <h3 class="title-xl">Новая эпоха2 <br> anti-age терапии</h3>     
                                     <p class="text-simple">
@@ -723,10 +723,11 @@
          window.onload = function () {
             document.body.classList.add('loaded_hiding');
         }
-    </script>
+    </script> 
     <script src="js/libs/jquery-3.4.1.min.js"></script>
     <script src="js/libs/jquery.magnific-popup.min.js"></script>
     <script src="js/libs/slick.min.js"></script>
+    <script src="js/libs/wow.min.js"></script>
     <script src="js/common.js"></script>
     <script>
         new WOW().init();
